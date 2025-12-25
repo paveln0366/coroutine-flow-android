@@ -8,6 +8,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.coroutineflow.crypto_app.CryptoActivity
 import com.example.coroutineflow.databinding.ActivityMainBinding
 import com.example.coroutineflow.lessons.lesson2.UsersActivity
+import com.example.coroutineflow.team_score.TeamScoreActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -29,6 +30,9 @@ class MainActivity : AppCompatActivity() {
         }
         binding.buttonCryptoActivity.setOnClickListener {
             startActivity(CryptoActivity.newIntent(this))
+        }
+        binding.teamScoreActivity.setOnClickListener {
+            startActivity(TeamScoreActivity.newIntent(this))
         }
     }
 }
